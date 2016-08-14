@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27DF759E1D60A2B2005DA2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF759D1D60A2B2005DA2DB /* AppDelegate.swift */; };
+		27DF75A01D60A2B2005DA2DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF759F1D60A2B2005DA2DB /* ViewController.swift */; };
+		27DF75A31D60A2B2005DA2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DF75A11D60A2B2005DA2DB /* Main.storyboard */; };
+		27DF75A51D60A2B2005DA2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DF75A41D60A2B2005DA2DB /* Assets.xcassets */; };
+		27DF75A81D60A2B2005DA2DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DF75A61D60A2B2005DA2DB /* LaunchScreen.storyboard */; };
+		27DF75B31D60A2B2005DA2DB /* RoDIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF75B21D60A2B2005DA2DB /* RoDIosTests.swift */; };
+		27DF75BE1D60A2B2005DA2DB /* RoDIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF75BD1D60A2B2005DA2DB /* RoDIosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27DF75AF1D60A2B2005DA2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DF75921D60A2B2005DA2DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DF75991D60A2B2005DA2DB;
+			remoteInfo = RoDIos;
+		};
+		27DF75BA1D60A2B2005DA2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DF75921D60A2B2005DA2DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DF75991D60A2B2005DA2DB;
+			remoteInfo = RoDIos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27DF759A1D60A2B2005DA2DB /* RoDIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoDIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DF759D1D60A2B2005DA2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27DF759F1D60A2B2005DA2DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27DF75A21D60A2B2005DA2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27DF75A41D60A2B2005DA2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27DF75A71D60A2B2005DA2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27DF75A91D60A2B2005DA2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DF75AE1D60A2B2005DA2DB /* RoDIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoDIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DF75B21D60A2B2005DA2DB /* RoDIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoDIosTests.swift; sourceTree = "<group>"; };
+		27DF75B41D60A2B2005DA2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DF75B91D60A2B2005DA2DB /* RoDIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoDIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DF75BD1D60A2B2005DA2DB /* RoDIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoDIosUITests.swift; sourceTree = "<group>"; };
+		27DF75BF1D60A2B2005DA2DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27DF75971D60A2B2005DA2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF75AB1D60A2B2005DA2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF75B61D60A2B2005DA2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27DF75911D60A2B2005DA2DB = {
+			isa = PBXGroup;
+			children = (
+				27DF759C1D60A2B2005DA2DB /* RoDIos */,
+				27DF75B11D60A2B2005DA2DB /* RoDIosTests */,
+				27DF75BC1D60A2B2005DA2DB /* RoDIosUITests */,
+				27DF759B1D60A2B2005DA2DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27DF759B1D60A2B2005DA2DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27DF759A1D60A2B2005DA2DB /* RoDIos.app */,
+				27DF75AE1D60A2B2005DA2DB /* RoDIosTests.xctest */,
+				27DF75B91D60A2B2005DA2DB /* RoDIosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DF759C1D60A2B2005DA2DB /* RoDIos */ = {
+			isa = PBXGroup;
+			children = (
+				27DF759D1D60A2B2005DA2DB /* AppDelegate.swift */,
+				27DF759F1D60A2B2005DA2DB /* ViewController.swift */,
+				27DF75A11D60A2B2005DA2DB /* Main.storyboard */,
+				27DF75A41D60A2B2005DA2DB /* Assets.xcassets */,
+				27DF75A61D60A2B2005DA2DB /* LaunchScreen.storyboard */,
+				27DF75A91D60A2B2005DA2DB /* Info.plist */,
+			);
+			path = RoDIos;
+			sourceTree = "<group>";
+		};
+		27DF75B11D60A2B2005DA2DB /* RoDIosTests */ = {
+			isa = PBXGroup;
+			children = (
+				27DF75B21D60A2B2005DA2DB /* RoDIosTests.swift */,
+				27DF75B41D60A2B2005DA2DB /* Info.plist */,
+			);
+			path = RoDIosTests;
+			sourceTree = "<group>";
+		};
+		27DF75BC1D60A2B2005DA2DB /* RoDIosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27DF75BD1D60A2B2005DA2DB /* RoDIosUITests.swift */,
+				27DF75BF1D60A2B2005DA2DB /* Info.plist */,
+			);
+			path = RoDIosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27DF75991D60A2B2005DA2DB /* RoDIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DF75C21D60A2B2005DA2DB /* Build configuration list for PBXNativeTarget "RoDIos" */;
+			buildPhases = (
+				27DF75961D60A2B2005DA2DB /* Sources */,
+				27DF75971D60A2B2005DA2DB /* Frameworks */,
+				27DF75981D60A2B2005DA2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoDIos;
+			productName = RoDIos;
+			productReference = 27DF759A1D60A2B2005DA2DB /* RoDIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27DF75AD1D60A2B2005DA2DB /* RoDIosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DF75C51D60A2B2005DA2DB /* Build configuration list for PBXNativeTarget "RoDIosTests" */;
+			buildPhases = (
+				27DF75AA1D60A2B2005DA2DB /* Sources */,
+				27DF75AB1D60A2B2005DA2DB /* Frameworks */,
+				27DF75AC1D60A2B2005DA2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DF75B01D60A2B2005DA2DB /* PBXTargetDependency */,
+			);
+			name = RoDIosTests;
+			productName = RoDIosTests;
+			productReference = 27DF75AE1D60A2B2005DA2DB /* RoDIosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27DF75B81D60A2B2005DA2DB /* RoDIosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DF75C81D60A2B2005DA2DB /* Build configuration list for PBXNativeTarget "RoDIosUITests" */;
+			buildPhases = (
+				27DF75B51D60A2B2005DA2DB /* Sources */,
+				27DF75B61D60A2B2005DA2DB /* Frameworks */,
+				27DF75B71D60A2B2005DA2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DF75BB1D60A2B2005DA2DB /* PBXTargetDependency */,
+			);
+			name = RoDIosUITests;
+			productName = RoDIosUITests;
+			productReference = 27DF75B91D60A2B2005DA2DB /* RoDIosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27DF75921D60A2B2005DA2DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jorge Casariego";
+				TargetAttributes = {
+					27DF75991D60A2B2005DA2DB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					27DF75AD1D60A2B2005DA2DB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 27DF75991D60A2B2005DA2DB;
+					};
+					27DF75B81D60A2B2005DA2DB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 27DF75991D60A2B2005DA2DB;
+					};
+				};
+			};
+			buildConfigurationList = 27DF75951D60A2B2005DA2DB /* Build configuration list for PBXProject "RoDIos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27DF75911D60A2B2005DA2DB;
+			productRefGroup = 27DF759B1D60A2B2005DA2DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27DF75991D60A2B2005DA2DB /* RoDIos */,
+				27DF75AD1D60A2B2005DA2DB /* RoDIosTests */,
+				27DF75B81D60A2B2005DA2DB /* RoDIosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27DF75981D60A2B2005DA2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF75A81D60A2B2005DA2DB /* LaunchScreen.storyboard in Resources */,
+				27DF75A51D60A2B2005DA2DB /* Assets.xcassets in Resources */,
+				27DF75A31D60A2B2005DA2DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF75AC1D60A2B2005DA2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF75B71D60A2B2005DA2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27DF75961D60A2B2005DA2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF75A01D60A2B2005DA2DB /* ViewController.swift in Sources */,
+				27DF759E1D60A2B2005DA2DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF75AA1D60A2B2005DA2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF75B31D60A2B2005DA2DB /* RoDIosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF75B51D60A2B2005DA2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF75BE1D60A2B2005DA2DB /* RoDIosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27DF75B01D60A2B2005DA2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DF75991D60A2B2005DA2DB /* RoDIos */;
+			targetProxy = 27DF75AF1D60A2B2005DA2DB /* PBXContainerItemProxy */;
+		};
+		27DF75BB1D60A2B2005DA2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DF75991D60A2B2005DA2DB /* RoDIos */;
+			targetProxy = 27DF75BA1D60A2B2005DA2DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27DF75A11D60A2B2005DA2DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DF75A21D60A2B2005DA2DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27DF75A61D60A2B2005DA2DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DF75A71D60A2B2005DA2DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27DF75C01D60A2B2005DA2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27DF75C11D60A2B2005DA2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27DF75C31D60A2B2005DA2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoDIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jorgecasariego.me.RoDIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27DF75C41D60A2B2005DA2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoDIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jorgecasariego.me.RoDIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27DF75C61D60A2B2005DA2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoDIosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jorgecasariego.me.RoDIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoDIos.app/RoDIos";
+			};
+			name = Debug;
+		};
+		27DF75C71D60A2B2005DA2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoDIosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jorgecasariego.me.RoDIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoDIos.app/RoDIos";
+			};
+			name = Release;
+		};
+		27DF75C91D60A2B2005DA2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RoDIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jorgecasariego.me.RoDIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RoDIos;
+			};
+			name = Debug;
+		};
+		27DF75CA1D60A2B2005DA2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RoDIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jorgecasariego.me.RoDIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RoDIos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27DF75951D60A2B2005DA2DB /* Build configuration list for PBXProject "RoDIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DF75C01D60A2B2005DA2DB /* Debug */,
+				27DF75C11D60A2B2005DA2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DF75C21D60A2B2005DA2DB /* Build configuration list for PBXNativeTarget "RoDIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DF75C31D60A2B2005DA2DB /* Debug */,
+				27DF75C41D60A2B2005DA2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27DF75C51D60A2B2005DA2DB /* Build configuration list for PBXNativeTarget "RoDIosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DF75C61D60A2B2005DA2DB /* Debug */,
+				27DF75C71D60A2B2005DA2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27DF75C81D60A2B2005DA2DB /* Build configuration list for PBXNativeTarget "RoDIosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DF75C91D60A2B2005DA2DB /* Debug */,
+				27DF75CA1D60A2B2005DA2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27DF75921D60A2B2005DA2DB /* Project object */;
+}
