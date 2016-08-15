@@ -48,25 +48,30 @@ class ViewController: UIViewController {
     }
 
     @IBAction func moveForward(sender: AnyObject) {
+        print("Go forward")
         speed = 100;
         sendCommand(Commands.MOVE, param1: speed, param2: speed);
     }
     
     @IBAction func stop(sender: AnyObject) {
+        print("Stop")
         speed = 0;
         sendCommand(Commands.MOVE, param1: speed, param2: speed);
     }
 
     @IBAction func moveLeft(sender: AnyObject) {
+        print("Go left")
         sendCommand(Commands.MOVE, param1: speed == 0 ? -100 : 0, param2: speed == 0 ? 100 : speed);
     }
     
     @IBAction func moveReverse(sender: AnyObject) {
+        print("Reverse")
         speed = -100;
         sendCommand(Commands.MOVE, param1: speed, param2: speed);
     }
     
     @IBAction func moveRight(sender: AnyObject) {
+        print("Go right")
         sendCommand(Commands.MOVE, param1: speed == 0 ? 100 : speed, param2: speed == 0 ? -100 : 0);
     }
     

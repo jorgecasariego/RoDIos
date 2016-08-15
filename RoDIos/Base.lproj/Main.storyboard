@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,10 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8T-n5-6eM">
-                                <rect key="frame" x="270" y="28" width="60" height="30"/>
+                                <rect key="frame" x="251" y="175" width="98" height="69"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.56535245007351653" blue="0.26121734208968411" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="Alq-P4-nA2"/>
-                                    <constraint firstAttribute="height" constant="30" id="Sy3-7j-2mX"/>
+                                    <constraint firstAttribute="height" constant="69" id="Dah-am-rO7"/>
+                                    <constraint firstAttribute="width" constant="98" id="QDP-bq-YF8"/>
                                 </constraints>
                                 <state key="normal" title="Forward"/>
                                 <connections>
@@ -30,10 +30,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-pw-GDD">
-                                <rect key="frame" x="270" y="489" width="60" height="30"/>
+                                <rect key="frame" x="251" y="355" width="98" height="63"/>
+                                <color key="backgroundColor" red="0.586406423598963" green="0.80800870437063466" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="9hK-AT-ieE"/>
-                                    <constraint firstAttribute="height" constant="30" id="Jd5-eC-rSh"/>
+                                    <constraint firstAttribute="width" constant="98" id="Vb8-qO-YIw"/>
+                                    <constraint firstAttribute="height" constant="63" id="rJe-7I-dsK"/>
                                 </constraints>
                                 <state key="normal" title="Reverse"/>
                                 <connections>
@@ -41,10 +42,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-o0-jdU">
-                                <rect key="frame" x="451" y="285" width="60" height="30"/>
+                                <rect key="frame" x="360" y="254" width="65" height="92"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.83195737564577632" blue="0.22576300549605458" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="QGl-Ks-2Ks"/>
-                                    <constraint firstAttribute="height" constant="30" id="diM-gl-pCN"/>
+                                    <constraint firstAttribute="width" constant="65" id="dTq-p6-EIu"/>
+                                    <constraint firstAttribute="height" constant="92" id="xnh-LW-ud4"/>
                                 </constraints>
                                 <state key="normal" title="Right"/>
                                 <connections>
@@ -52,10 +54,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSI-J2-Vcn">
-                                <rect key="frame" x="119" y="285" width="60" height="30"/>
+                                <rect key="frame" x="175" y="247" width="65" height="106"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.56449155528871398" blue="0.76543302292636839" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LXG-fU-SoF"/>
-                                    <constraint firstAttribute="width" constant="60" id="clr-lF-scy"/>
+                                    <constraint firstAttribute="width" constant="65" id="Lem-ru-IsY"/>
+                                    <constraint firstAttribute="height" constant="106" id="h71-V3-Zzw"/>
                                 </constraints>
                                 <state key="normal" title="Left"/>
                                 <connections>
@@ -63,10 +66,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ps-We-JUl">
-                                <rect key="frame" x="255" y="285" width="90" height="30"/>
+                                <rect key="frame" x="263" y="263" width="74" height="74"/>
+                                <color key="backgroundColor" red="0.54847803610000001" green="1" blue="0.45505259460000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Dbt-WA-5Er"/>
-                                    <constraint firstAttribute="height" constant="30" id="Wmt-4g-VlE"/>
+                                    <constraint firstAttribute="height" constant="74" id="4R0-YR-OBg"/>
+                                    <constraint firstAttribute="width" constant="74" id="BAN-2M-eCc"/>
                                 </constraints>
                                 <state key="normal" title="Stop"/>
                                 <connections>
@@ -76,22 +80,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xSI-J2-Vcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="1HU-5h-kPE"/>
-                            <constraint firstItem="9ps-We-JUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4th-lX-F8x"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J6m-pw-GDD" secondAttribute="bottom" constant="81" id="72X-9f-krn"/>
-                            <constraint firstItem="9ps-We-JUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RI4-2m-a34"/>
-                            <constraint firstItem="b8T-n5-6eM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sf5-y9-yks"/>
-                            <constraint firstItem="xSI-J2-Vcn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Suo-4B-41g"/>
-                            <constraint firstItem="J6m-pw-GDD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XAD-XP-EX3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gI9-o0-jdU" secondAttribute="trailing" constant="69" id="XSB-Ok-t8N"/>
-                            <constraint firstItem="b8T-n5-6eM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="a93-bH-qG2"/>
-                            <constraint firstItem="gI9-o0-jdU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wdr-8s-XT8"/>
+                            <constraint firstItem="J6m-pw-GDD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZh-tx-fhq"/>
+                            <constraint firstItem="9ps-We-JUl" firstAttribute="top" secondItem="b8T-n5-6eM" secondAttribute="bottom" constant="19" id="Jdp-Hc-K18"/>
+                            <constraint firstItem="xSI-J2-Vcn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MeZ-5M-CXx"/>
+                            <constraint firstItem="9ps-We-JUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V3O-ZG-qIx"/>
+                            <constraint firstItem="9ps-We-JUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YxT-er-STp"/>
+                            <constraint firstItem="gI9-o0-jdU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gqV-Rp-DNs"/>
+                            <constraint firstItem="gI9-o0-jdU" firstAttribute="leading" secondItem="9ps-We-JUl" secondAttribute="trailing" constant="23" id="pVl-mz-Llk"/>
+                            <constraint firstItem="J6m-pw-GDD" firstAttribute="top" secondItem="9ps-We-JUl" secondAttribute="bottom" constant="18" id="pXX-15-pGB"/>
+                            <constraint firstItem="9ps-We-JUl" firstAttribute="leading" secondItem="xSI-J2-Vcn" secondAttribute="trailing" constant="23" id="vdH-gA-z70"/>
+                            <constraint firstItem="b8T-n5-6eM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYy-lO-ksv"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="315"/>
+            <point key="canvasLocation" x="198" y="448"/>
         </scene>
     </scenes>
 </document>
