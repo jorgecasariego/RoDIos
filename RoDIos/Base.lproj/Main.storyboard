@@ -78,6 +78,21 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1m-X4-hX4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZV-wY-B2y">
+                                <rect key="frame" x="20" y="545" width="156" height="36"/>
+                                <color key="backgroundColor" red="0.27885579111847575" green="0.69040009469696972" blue="0.24375827919294191" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="HnE-xl-eNN"/>
+                                    <constraint firstAttribute="width" constant="156" id="lsF-Wl-sYu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Start Accelerometer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAccelerometer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Id-3o-js4"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWc-5H-71B">
                                 <rect key="frame" x="503" y="544" width="77" height="36"/>
                                 <color key="backgroundColor" red="0.83529411760000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,21 +119,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZV-wY-B2y">
-                                <rect key="frame" x="20" y="545" width="156" height="36"/>
-                                <color key="backgroundColor" red="0.27885579111847575" green="0.69040009469696972" blue="0.24375827919294191" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkh-hO-AAe">
+                                <rect key="frame" x="221" y="134" width="158" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="HnE-xl-eNN"/>
-                                    <constraint firstAttribute="width" constant="156" id="lsF-Wl-sYu"/>
+                                    <constraint firstAttribute="height" constant="33" id="GjC-Hc-Our"/>
+                                    <constraint firstAttribute="width" constant="158" id="Yyt-08-8nd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Start Accelerometer">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="startAccelerometer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Id-3o-js4"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -130,8 +140,10 @@
                             <constraint firstItem="9ps-We-JUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V3O-ZG-qIx"/>
                             <constraint firstItem="9ps-We-JUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YxT-er-STp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IWc-5H-71B" secondAttribute="trailing" id="f0g-78-JCQ"/>
+                            <constraint firstItem="Nkh-hO-AAe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fGt-Xv-pZi"/>
                             <constraint firstItem="gI9-o0-jdU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gqV-Rp-DNs"/>
                             <constraint firstItem="8rM-rL-Slj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="id5-ht-AQC"/>
+                            <constraint firstItem="Nkh-hO-AAe" firstAttribute="top" secondItem="8rM-rL-Slj" secondAttribute="bottom" constant="16" id="k1L-bL-tMg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="DZV-wY-B2y" secondAttribute="leading" id="kLP-IC-vAp"/>
                             <constraint firstItem="gI9-o0-jdU" firstAttribute="leading" secondItem="9ps-We-JUl" secondAttribute="trailing" constant="23" id="pVl-mz-Llk"/>
                             <constraint firstItem="J6m-pw-GDD" firstAttribute="top" secondItem="9ps-We-JUl" secondAttribute="bottom" constant="18" id="pXX-15-pGB"/>
@@ -142,6 +154,7 @@
                     </view>
                     <connections>
                         <outlet property="directionLabel" destination="8rM-rL-Slj" id="SzO-kf-z1n"/>
+                        <outlet property="distanceLabel" destination="Nkh-hO-AAe" id="0Bx-Ss-KfL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

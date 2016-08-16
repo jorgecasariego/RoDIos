@@ -21,11 +21,15 @@ import CoreMotion
 class ViewController: UIViewController {
     
     @IBOutlet weak var directionLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
     
+    // MARK: - Properties
     let hostname = "192.168.4.1"
     let port = "1234"
+    var speed = 0
     let manager = CMMotionManager()
     
+    // MARK: - Commands
     enum Commands: Int {
         case BLINK = 1
         case SENSE = 2
@@ -38,8 +42,6 @@ class ViewController: UIViewController {
         case IMU = 9
         
     }
-    
-    var speed = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +51,7 @@ class ViewController: UIViewController {
         
     }
 
-
+    // MARK: - Actions
     @IBAction func moveForward(sender: AnyObject) {
         directionLabel.text = "Forward"
         speed = 100;
@@ -78,13 +80,27 @@ class ViewController: UIViewController {
         sendCommand(Commands.MOVE, param1: speed == 0 ? 100 : speed, param2: speed == 0 ? -100 : 0);
     }
     
+    // MARK: - Communication
     func sendCommand(cmd: Commands, param1: Int, param2: Int){
         Alamofire.request(.GET, "http://\(hostname):\(port)/\(cmd.rawValue)/\(param1)/\(param2)") .responseJSON { response in // 1
-            print("request: \(response.request)")   // original URL request
-            print("response: \(response.response)") // URL response
+            //print("request: \(response.request)")   // original URL request
+            //print("response: \(response.response)") // URL response
+            print("")
+            self.getDistance()
+        }
+        
+        
+    }
+    
+    func getDistance() {
+        Alamofire.request(.GET, "http://\(hostname):\(port)/5").responseJSON { response in // 1
+            if let JSON = response.result.value {
+                self.distanceLabel.text = "Distance to crash : \(JSON) !"
+            }
         }
     }
     
+    // MARK: - Accelerometer Actions
     @IBAction func startAccelerometer(sender: UIButton) {
         manager.accelerometerUpdateInterval = 1
         
