@@ -16,11 +16,15 @@
 
 import UIKit
 import Alamofire
+import CoreMotion
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var directionLabel: UILabel!
+    
     let hostname = "192.168.4.1"
     let port = "1234"
+    let manager = CMMotionManager()
     
     enum Commands: Int {
         case BLINK = 1
@@ -40,50 +44,90 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        manager.startAccelerometerUpdates()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     @IBAction func moveForward(sender: AnyObject) {
-        print("Go forward")
+        directionLabel.text = "Forward"
         speed = 100;
         sendCommand(Commands.MOVE, param1: speed, param2: speed);
     }
-    
+ 
     @IBAction func stop(sender: AnyObject) {
-        print("Stop")
+        directionLabel.text = "Stop"
         speed = 0;
         sendCommand(Commands.MOVE, param1: speed, param2: speed);
     }
 
     @IBAction func moveLeft(sender: AnyObject) {
-        print("Go left")
+        directionLabel.text = "Left"
         sendCommand(Commands.MOVE, param1: speed == 0 ? -100 : 0, param2: speed == 0 ? 100 : speed);
     }
     
     @IBAction func moveReverse(sender: AnyObject) {
-        print("Reverse")
+        directionLabel.text = "Reverse"
         speed = -100;
         sendCommand(Commands.MOVE, param1: speed, param2: speed);
     }
     
     @IBAction func moveRight(sender: AnyObject) {
-        print("Go right")
+        directionLabel.text = "Right"
         sendCommand(Commands.MOVE, param1: speed == 0 ? 100 : speed, param2: speed == 0 ? -100 : 0);
     }
     
     func sendCommand(cmd: Commands, param1: Int, param2: Int){
-        print("comamdno: \(cmd.rawValue)")
-        
         Alamofire.request(.GET, "http://\(hostname):\(port)/\(cmd.rawValue)/\(param1)/\(param2)") .responseJSON { response in // 1
-            print(response.request)  // original URL request
-            print(response.response) // URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
+            print("request: \(response.request)")   // original URL request
+            print("response: \(response.response)") // URL response
         }
+    }
+    
+    @IBAction func startAccelerometer(sender: UIButton) {
+        manager.accelerometerUpdateInterval = 1
+        
+        manager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()){
+            [weak self] (data: CMAccelerometerData?, error: NSError?) in
+            
+            if let acceleration = data?.acceleration {
+                if(abs(acceleration.x) > abs(acceleration.y)){
+                    if (acceleration.x > 0) {
+                        self!.directionLabel.text = "Right"
+                        self!.speed = 100;
+                        self!.sendCommand(Commands.MOVE, param1: self!.speed == 0 ? 100 : self!.speed, param2: self!.speed == 0 ? -100 : 0);
+                    }
+                    
+                    if (acceleration.x < 0) {
+                        self!.directionLabel.text = "Left"
+                        self!.sendCommand(Commands.MOVE, param1: self!.speed == 0 ? -100 : 0, param2: self!.speed == 0 ? 100 : self!.speed);
+                    }
+                    
+                } else {
+                   
+                    if (acceleration.y > 0) {
+                        self!.directionLabel.text = "Forward"
+                        self!.speed = 100;
+                        self!.sendCommand(Commands.MOVE, param1: self!.speed, param2: self!.speed);
+                    }
+                    if (acceleration.y < 0) {
+                        self!.directionLabel.text = "Reverse"
+                        self!.speed = -100;
+                        self!.sendCommand(Commands.MOVE, param1: self!.speed, param2: self!.speed);
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    
+    @IBAction func stopAccelerometer(sender: UIButton) {
+        self.directionLabel.text = "Stop"
+        speed = 0;
+        sendCommand(Commands.MOVE, param1: speed, param2: speed);
+        manager.stopAccelerometerUpdates()
     }
 }
 

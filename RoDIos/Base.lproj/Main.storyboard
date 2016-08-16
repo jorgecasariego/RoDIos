@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -77,21 +78,71 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1m-X4-hX4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWc-5H-71B">
+                                <rect key="frame" x="503" y="544" width="77" height="36"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="VXG-p1-XFH"/>
+                                    <constraint firstAttribute="height" constant="36" id="fp0-Xr-LwQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAccelerometer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEO-x4-qWD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-rL-Slj">
+                                <rect key="frame" x="108" y="61" width="385" height="57"/>
+                                <color key="backgroundColor" red="0.803688403317665" green="0.83529411760000005" blue="0.79396058948512271" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="9tp-z4-TPh"/>
+                                    <constraint firstAttribute="width" constant="385" id="VZz-OM-Bkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZV-wY-B2y">
+                                <rect key="frame" x="20" y="545" width="156" height="36"/>
+                                <color key="backgroundColor" red="0.27885579111847575" green="0.69040009469696972" blue="0.24375827919294191" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="HnE-xl-eNN"/>
+                                    <constraint firstAttribute="width" constant="156" id="lsF-Wl-sYu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Start Accelerometer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAccelerometer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Id-3o-js4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWc-5H-71B" secondAttribute="bottom" constant="20" id="2JX-SX-LA0"/>
+                            <constraint firstItem="8rM-rL-Slj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="IgY-q9-pFb"/>
                             <constraint firstItem="J6m-pw-GDD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZh-tx-fhq"/>
                             <constraint firstItem="9ps-We-JUl" firstAttribute="top" secondItem="b8T-n5-6eM" secondAttribute="bottom" constant="19" id="Jdp-Hc-K18"/>
                             <constraint firstItem="xSI-J2-Vcn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MeZ-5M-CXx"/>
                             <constraint firstItem="9ps-We-JUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V3O-ZG-qIx"/>
                             <constraint firstItem="9ps-We-JUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YxT-er-STp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IWc-5H-71B" secondAttribute="trailing" id="f0g-78-JCQ"/>
                             <constraint firstItem="gI9-o0-jdU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gqV-Rp-DNs"/>
+                            <constraint firstItem="8rM-rL-Slj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="id5-ht-AQC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DZV-wY-B2y" secondAttribute="leading" id="kLP-IC-vAp"/>
                             <constraint firstItem="gI9-o0-jdU" firstAttribute="leading" secondItem="9ps-We-JUl" secondAttribute="trailing" constant="23" id="pVl-mz-Llk"/>
                             <constraint firstItem="J6m-pw-GDD" firstAttribute="top" secondItem="9ps-We-JUl" secondAttribute="bottom" constant="18" id="pXX-15-pGB"/>
                             <constraint firstItem="9ps-We-JUl" firstAttribute="leading" secondItem="xSI-J2-Vcn" secondAttribute="trailing" constant="23" id="vdH-gA-z70"/>
                             <constraint firstItem="b8T-n5-6eM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYy-lO-ksv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DZV-wY-B2y" secondAttribute="bottom" constant="19" id="zFk-IQ-On2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="8rM-rL-Slj" id="SzO-kf-z1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
